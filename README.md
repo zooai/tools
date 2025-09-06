@@ -1,10 +1,10 @@
-# Shinkai Tools 🛠️
+# Zoo Tools 🛠️
 
-A collection of official tools for Shinkai, providing various functionalities from basic examples to advanced search capabilities.
+A collection of official tools for Zoo AI, providing various functionalities from basic examples to advanced search capabilities.
 
 ## Overview
 
-This repository hosts a suite of tools designed to work with Shinkai's infrastructure. Each tool is built to provide specific functionality while maintaining security and reliability through Shinkai's sandboxed environment.
+This repository hosts a suite of tools designed to work with Zoo AI's infrastructure. Each tool is built to provide specific functionality while maintaining security and reliability through Zoo AI's sandboxed environment.
 
 ## Available Tools
 
@@ -47,18 +47,18 @@ Currently available tools include:
 
 ## Tool Structure and Required Files
 
-Every Shinkai tool requires specific files to function properly. Here's a detailed look at each required file:
+Every Zoo AI tool requires specific files to function properly. Here's a detailed look at each required file:
 
 ### icon.png
 - Square image in PNG format (1:1 ratio)
 - Minimum dimensions: 80x80 pixels
-- Used for tool identification in the Shinkai UI and Store
+- Used for tool identification in the Zoo AI UI and Store
 - Example: A distinctive icon representing the tool's primary function
 
 ### banner.png
 - Wide image in PNG format (16:9 ratio)
 - Minimum dimensions: 1200x676 pixels
-- Used for tool identification in the Shinkai UI and Store
+- Used for tool identification in the Zoo AI UI and Store
 - Example: A real world usage scenario that explains the tool benefits.
 
 ### metadata.json

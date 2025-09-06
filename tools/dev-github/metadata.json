@@ -1,6 +1,6 @@
 {
   "name": "GitHub API Request",
-  "homepage": "https://github.com/dcSpark/shinkai-tools/blob/main/tools/dev-github/README.md",
+  "homepage": "https://github.com/dcSpark/zoo-tools/blob/main/tools/dev-github/README.md",
   "description": "Tool to make requests to the GitHub API using OAuth for authentication.",
   "author": "@@localhost.sep-shinkai",
   "version": "1.0.0",

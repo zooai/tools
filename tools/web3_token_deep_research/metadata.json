@@ -9,7 +9,7 @@
     "web3"
   ],
   "version": "1.0.0",
-  "author": "@@official.shinkai",
+  "author": "@@zoo",
   "configurations": {
     "properties": {},
     "required": []
@@ -52,11 +52,11 @@
   "sqlQueries": [],
   "sqlTables": [],
   "tools": [
-    "local:::__official_shinkai:::google_search",
-    "local:::__official_shinkai:::shinkai_llm_prompt_processor",
-    "local:::__official_shinkai:::markdown_exporter",
-    "local:::__official_shinkai:::wait_1_5_seconds",
-    "local:::__official_shinkai:::download_pages"
+    "local:::__zoo__:::google_search",
+    "local:::__zoo__:::shinkai_llm_prompt_processor",
+    "local:::__zoo__:::markdown_exporter",
+    "local:::__zoo__:::wait_1_5_seconds",
+    "local:::__zoo__:::download_pages"
   ],
   "runner": "any",
   "operating_system": [

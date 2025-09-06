@@ -2,7 +2,7 @@
   "name": "iterm-write",
   "version": "1.0.0",
   "description": "Writes a command (or text) to the active iTerm terminal.",
-  "author": "Shinkai",
+  "author": "Zoo AI",
   "keywords": [
     "iterm",
     "terminal",

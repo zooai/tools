@@ -7,15 +7,15 @@
   "knowledge": [],
   "storage_path": "",
   "tools": [
-    "local:::__official_shinkai:::x_twitter_get_user",
-    "local:::__official_shinkai:::x_twitter_get_user_replies",
-    "local:::__official_shinkai:::x_twitter_get_user_tweets",
-    "local:::__official_shinkai:::x_twitter_get_user_following",
-    "local:::__official_shinkai:::x_twitter_get_user_followers",
-    "local:::__official_shinkai:::x_twitter_search",
-    "local:::__official_shinkai:::x_twitter_search_top",
-    "local:::__official_shinkai:::x_twitter_search_latest",
-    "local:::__official_shinkai:::x_twitter_search_users"
+    "local:::__zoo__:::x_twitter_get_user",
+    "local:::__zoo__:::x_twitter_get_user_replies",
+    "local:::__zoo__:::x_twitter_get_user_tweets",
+    "local:::__zoo__:::x_twitter_get_user_following",
+    "local:::__zoo__:::x_twitter_get_user_followers",
+    "local:::__zoo__:::x_twitter_search",
+    "local:::__zoo__:::x_twitter_search_top",
+    "local:::__zoo__:::x_twitter_search_latest",
+    "local:::__zoo__:::x_twitter_search_users"
   ],
   "debug_mode": false,
   "config": {

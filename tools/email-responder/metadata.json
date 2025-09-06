@@ -1,8 +1,8 @@
 {
   "name": "Email Answerer",
-  "homepage": "https://github.com/dcSpark/shinkai-tools/blob/main/tools/email-responder/README.md",
+  "homepage": "https://github.com/dcSpark/zoo-tools/blob/main/tools/email-responder/README.md",
   "description": "Generates responses to emails based on a given context and memory, and logs answered emails in a database.",
-  "author": "Shinkai",
+  "author": "Zoo AI",
   "version": "1.0.0",
   "keywords": [
     "email",
@@ -95,11 +95,11 @@
     }
   ],
   "tools": [
-    "local:::__official_shinkai:::email_fetcher",
-    "local:::__official_shinkai:::send_email",
-    "local:::__official_shinkai:::shinkai_sqlite_query_executor",
-    "local:::__official_shinkai:::shinkai_llm_prompt_processor",
-    "local:::__official_shinkai:::memory_insights_management"
+    "local:::__zoo__:::email_fetcher",
+    "local:::__zoo__:::send_email",
+    "local:::__zoo__:::shinkai_sqlite_query_executor",
+    "local:::__zoo__:::shinkai_llm_prompt_processor",
+    "local:::__zoo__:::memory_insights_management"
   ],
   "oauth": null
 }

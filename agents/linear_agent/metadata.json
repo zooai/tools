@@ -7,13 +7,13 @@
   "knowledge": [],
   "storage_path": "",
   "tools": [
-    "local:::__official_shinkai:::linear_comment_creator",
-    "local:::__official_shinkai:::linear_fetch_issues_by_team",
-    "local:::__official_shinkai:::linear_create_issue",
-    "local:::__official_shinkai:::linear_organization_fetcher",
-    "local:::__official_shinkai:::linear_fetch_workflow_states",
-    "local:::__official_shinkai:::linear_issue_updater",
-    "local:::__official_shinkai:::linear_fetch_issues_by_user"
+    "local:::__zoo__:::linear_comment_creator",
+    "local:::__zoo__:::linear_fetch_issues_by_team",
+    "local:::__zoo__:::linear_create_issue",
+    "local:::__zoo__:::linear_organization_fetcher",
+    "local:::__zoo__:::linear_fetch_workflow_states",
+    "local:::__zoo__:::linear_issue_updater",
+    "local:::__zoo__:::linear_fetch_issues_by_user"
   ],
   "debug_mode": false,
   "config": {

@@ -7,7 +7,7 @@
   "knowledge": [],
   "storage_path": "",
   "tools": [
-    "local:::__official_shinkai:::download_pages"
+    "local:::__zoo__:::download_pages"
   ],
   "debug_mode": false,
   "config": {

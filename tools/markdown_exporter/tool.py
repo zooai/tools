@@ -6,7 +6,7 @@
 
 from typing import Any, Optional, List, Dict
 import os
-from shinkai_local_support import get_home_path
+from zoo_local_support import get_home_path
 
 class CONFIG:
     pass

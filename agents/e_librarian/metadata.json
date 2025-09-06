@@ -7,8 +7,8 @@
   "knowledge": [],
   "storage_path": "",
   "tools": [
-    "local:::__official_shinkai:::anna_s_archive_ebook_search___web_scrapping_based",
-    "local:::__official_shinkai:::google_search"
+    "local:::__zoo__:::anna_s_archive_ebook_search___web_scrapping_based",
+    "local:::__zoo__:::google_search"
   ],
   "debug_mode": false,
   "config": {

@@ -7,7 +7,7 @@
 
 from typing import Any, Optional, Set, List # Added Set, List for type hinting
 import os
-from shinkai_local_support import get_home_path
+from zoo_local_support import get_home_path
 from gitingest import ingest_async # Explicitly importing ingest_async
 
 class CONFIG:

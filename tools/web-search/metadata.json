@@ -1,8 +1,8 @@
 {
   "name": "Web Search",
-  "homepage": "https://github.com/dcSpark/shinkai-tools/blob/main/tools/web-search/README.md",
+  "homepage": "https://github.com/dcSpark/zoo-tools/blob/main/tools/web-search/README.md",
   "description": "This function takes a search query as input and returns a list of results from the web.",
-  "author": "Shinkai",
+  "author": "Zoo AI",
   "version": "1.0.0",
   "keywords": [
     "search",

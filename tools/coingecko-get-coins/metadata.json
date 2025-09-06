@@ -2,7 +2,7 @@
   "name": "coingecko-get-coins",
   "version": "1.0.0",
   "description": "Fetch a paginated list of all coins from CoinGecko. Works by retrieving the entire list and slicing manually.",
-  "author": "Shinkai",
+  "author": "Zoo AI",
   "keywords": [
     "coingecko",
     "cryptocurrency",

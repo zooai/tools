@@ -47,8 +47,8 @@
     "sqlQueries": [],
     "sqlTables": [],
     "tools": [
-      "local:::__official_shinkai:::shinkai_llm_prompt_processor",
-      "local:::__official_shinkai:::eleven_labs_text_to_speech"
+      "local:::__zoo__:::shinkai_llm_prompt_processor",
+      "local:::__zoo__:::eleven_labs_text_to_speech"
     ],
     "version": "1.0.0"
   }

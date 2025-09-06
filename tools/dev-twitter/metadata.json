@@ -1,6 +1,6 @@
 {
   "name": "X/Twitter Developer API",
-  "homepage": "https://github.com/dcSpark/shinkai-tools/blob/main/tools/dev-twitter/README.md",
+  "homepage": "https://github.com/dcSpark/zoo-tools/blob/main/tools/dev-twitter/README.md",
   "description": "Tool to make requests to the X/Twitter Developer API using OAuth for authentication.",
   "author": "@@localhost.sep-shinkai",
   "version": "1.0.0",

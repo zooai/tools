@@ -7,8 +7,8 @@
   "knowledge": [],
   "storage_path": "",
   "tools": [
-    "local:::__official_shinkai:::download_pages",
-    "local:::__official_shinkai:::markdown_to_mind_map"
+    "local:::__zoo__:::download_pages",
+    "local:::__zoo__:::markdown_to_mind_map"
   ],
   "debug_mode": false,
   "config": {

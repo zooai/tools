@@ -13,7 +13,7 @@ import numpy as np
 import os
 import platform
 from typing import Dict, Any, Optional, List
-from shinkai_local_support import get_home_path
+from zoo_local_support import get_home_path
 
 class CONFIG:
     cameraIndex: Optional[int]

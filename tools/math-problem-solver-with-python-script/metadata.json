@@ -9,7 +9,7 @@
     "python"
   ],
   "version": "1.0.0",
-  "author": "@@official.shinkai",
+  "author": "@@zoo",
   "configurations": {
     "properties": {
       "max_retries": {

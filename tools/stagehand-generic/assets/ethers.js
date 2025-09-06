@@ -22616,7 +22616,7 @@
     en: LangEn.wordlist()
   };
 
-  // src/shinkai-ethers.ts
+  // src/zoo-ethers.ts
   var NETWORK_CONFIGS = {
     1: { name: "Ethereum Mainnet", rpcUrl: "https://eth.llamarpc.com" },
     8453: { name: "Base Mainnet", rpcUrl: "https://base.llamarpc.com" },
@@ -22664,7 +22664,7 @@
       this._state.accounts = [this.selectedAddress];
       this._state.initialized = true;
       this._windowProvider = windowProvider;
-      console.log("Shinkai Ethers>> Initialized with network:", network.name);
+      console.log("Zoo Ethers>> Initialized with network:", network.name);
     }
     // Event handling with window.ethereum sync
     updateWindowProvider() {
@@ -22718,7 +22718,7 @@
     }
     // EIP-1193 methods
     async request({ method, params = [] }) {
-      console.log("Shinkai Ethers>> request", method, params);
+      console.log("Zoo Ethers>> request", method, params);
       switch (method) {
         case "eth_chainId":
           return this.chainId;
@@ -22938,9 +22938,9 @@
           return [this.selectedAddress];
         }
         const chainId = await this.request({ method: "eth_chainId", params: [] });
-        console.log("Shinkai Ethers>> Connected to chain:", chainId);
+        console.log("Zoo Ethers>> Connected to chain:", chainId);
         const accounts = await this.request({ method: "eth_requestAccounts", params: [] });
-        console.log("Shinkai Ethers>> Connected with accounts:", accounts);
+        console.log("Zoo Ethers>> Connected with accounts:", accounts);
         this.status = "connected";
         this._state.isConnected = true;
         this.emit("connect", { chainId });
@@ -23027,7 +23027,7 @@
         }
         this.status = "connecting";
         const chainId = await this.request({ method: "eth_chainId", params: [] });
-        console.log("Shinkai Ethers>> Connected to chain:", chainId);
+        console.log("Zoo Ethers>> Connected to chain:", chainId);
         this.status = "connected";
         this._state.isConnected = true;
         this.emit("connect", { chainId });
@@ -23108,7 +23108,7 @@
     };
     announceProvider();
     window.addEventListener("eip6963:requestProvider", announceProvider);
-    console.log("Shinkai Ethers>> Provider initialized and ready (not auto-connected)");
+    console.log("Zoo Ethers>> Provider initialized and ready (not auto-connected)");
     return provider;
   }
   if (typeof window !== "undefined") {

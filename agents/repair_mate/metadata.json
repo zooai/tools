@@ -7,10 +7,10 @@
   "knowledge": [],
   "storage_path": "",
   "tools": [
-    "local:::__official_shinkai:::google_search",
-    "local:::__official_shinkai:::youtube_search",
-    "local:::__official_shinkai:::download_pages",
-    "local:::__official_shinkai:::youtube_transcript_extractor_2_0"
+    "local:::__zoo__:::google_search",
+    "local:::__zoo__:::youtube_search",
+    "local:::__zoo__:::download_pages",
+    "local:::__zoo__:::youtube_transcript_extractor_2_0"
   ],
   "debug_mode": false,
   "config": {

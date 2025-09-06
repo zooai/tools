@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "name": "PubMed Search",
   "description": "Search PubMed for scientific/medical literature and return MEDLINE records.",
-  "author": "Shinkai",
+  "author": "Zoo AI",
   "keywords": [
     "pubmed",
     "literature",

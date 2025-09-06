@@ -1,5 +1,5 @@
 {
-    "author": "Shinkai",
+    "author": "Zoo AI",
     "runner": "any",
   "operating_system": ["linux", "macos", "windows"],
   "tool_set": "",
@@ -65,9 +65,9 @@
     "sqlQueries": [],
     "sqlTables": [],
     "tools": [
-      "local:::__official_shinkai:::pdf_text_extractor",
-      "local:::__official_shinkai:::shinkai_llm_prompt_processor",
-      "local:::__official_shinkai:::eleven_labs_text_to_speech"
+      "local:::__zoo__:::pdf_text_extractor",
+      "local:::__zoo__:::shinkai_llm_prompt_processor",
+      "local:::__zoo__:::eleven_labs_text_to_speech"
     ],
     "version": "1.0.0"
   }

@@ -7,7 +7,7 @@
   "knowledge": [],
   "storage_path": "",
   "tools": [
-    "local:::__official_shinkai:::text_to_image_generator___getimg_ai_flux_1"
+    "local:::__zoo__:::text_to_image_generator___getimg_ai_flux_1"
   ],
   "debug_mode": false,
   "config": {

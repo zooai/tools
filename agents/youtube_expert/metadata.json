@@ -7,10 +7,10 @@
   "knowledge": [],
   "storage_path": "",
   "tools": [
-    "local:::__official_shinkai:::youtube_transcript_extractor_2_0",
-    "local:::__official_shinkai:::youtube_search_with_serpapi",
-    "local:::__official_shinkai:::audio_to_text_transcription",
-    "local:::__official_shinkai:::youtube_audio_downloader"
+    "local:::__zoo__:::youtube_transcript_extractor_2_0",
+    "local:::__zoo__:::youtube_search_with_serpapi",
+    "local:::__zoo__:::audio_to_text_transcription",
+    "local:::__zoo__:::youtube_audio_downloader"
   ],
   "debug_mode": false,
   "config": {

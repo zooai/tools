@@ -1,8 +1,8 @@
 {
     "name": "Perplexity API",
-    "homepage": "https://github.com/dcSpark/shinkai-tools/blob/main/tools/perplexity-api/README.md",
+    "homepage": "https://github.com/dcSpark/zoo-tools/blob/main/tools/perplexity-api/README.md",
     "description": "Searches the web using Perplexity API (limited)",
-    "author": "Shinkai",
+    "author": "Zoo AI",
     "version": "1.0.0",
     "keywords": [
       "perplexity",
