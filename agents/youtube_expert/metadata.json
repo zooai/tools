@@ -1,16 +1,16 @@
 {
   "name": "Youtube Expert",
   "agent_id": "youtube_expert",
-  "full_identity_name": "@@official.sep-shinkai/main/agent/youtube_expert",
-  "llm_provider_id": "shinkai_free_trial",
+  "full_identity_name": "did:zoo:youtube_expert",
+  "llm_provider_id": "zoo_free_trial",
   "ui_description": "This expert has access to youtube search (using serpapi) and to download video transcripts. If a video doesn't have a transcript, it can download the audio and then process it to extract its transcript.",
   "knowledge": [],
   "storage_path": "",
   "tools": [
-    "local:::__zoo__:::youtube_transcript_extractor_2_0",
-    "local:::__zoo__:::youtube_search_with_serpapi",
-    "local:::__zoo__:::audio_to_text_transcription",
-    "local:::__zoo__:::youtube_audio_downloader"
+    "local:zoo:youtube_transcript_extractor_2_0",
+    "local:zoo:youtube_search_with_serpapi",
+    "local:zoo:audio_to_text_transcription",
+    "local:zoo:youtube_audio_downloader"
   ],
   "debug_mode": false,
   "config": {

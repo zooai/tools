@@ -2,7 +2,7 @@
   "name": "X/Twitter Get User Following",
   "homepage": "https://github.com/dcSpark/zoo-tools/blob/main/tools/twitter-get-user-following/README.md",
   "description": "Function to fetch the list of users a Twitter user is following.",
-  "author": "Zoo AI",
+  "author": "did:zoo",
   "homePage": "",
   "configurations": {
     "type": "object",

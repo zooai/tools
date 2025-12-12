@@ -1,16 +1,16 @@
 {
   "name": "Repair mate",
   "agent_id": "repair_mate",
-  "full_identity_name": "@@official.sep-shinkai/main/agent/repair_mate",
-  "llm_provider_id": "shinkai_free_trial",
+  "full_identity_name": "did:zoo:repair_mate",
+  "llm_provider_id": "zoo_free_trial",
   "ui_description": "AI Agent specialized in helping you repair and fix broken things (web and youtube access).",
   "knowledge": [],
   "storage_path": "",
   "tools": [
-    "local:::__zoo__:::google_search",
-    "local:::__zoo__:::youtube_search",
-    "local:::__zoo__:::download_pages",
-    "local:::__zoo__:::youtube_transcript_extractor_2_0"
+    "local:zoo:google_search",
+    "local:zoo:youtube_search",
+    "local:zoo:download_pages",
+    "local:zoo:youtube_transcript_extractor_2_0"
   ],
   "debug_mode": false,
   "config": {

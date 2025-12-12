@@ -42,10 +42,10 @@ interface OUTPUT {
   executeResponse: ExecuteResponse;
 }
 
-// Helper function to fetch token address and decimals from Shinkai API
+// Helper function to fetch token address and decimals from Zoo API
 async function getTokenAddress(symbol: string): Promise<{ address: string; decimals: number }> {
   const lowerSymbol = symbol.toLowerCase();
-  const url = `https://api.shinkai.com/solana/${lowerSymbol}`;
+  const url = `https://api.zoo.ai/solana/${lowerSymbol}`;
   const response = await fetch(url);
   if (!response.ok) {
     throw new Error(`Failed to fetch token address for ${symbol}: ${response.statusText}`);

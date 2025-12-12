@@ -1,4 +1,4 @@
-import { shinkaiSqliteQueryExecutor as shinkaiSqliteQueryExecutor_ } from "./shinkai-local-tools.ts";
+import { zooSqliteQueryExecutor as zooSqliteQueryExecutor_ } from "./zoo-local-tools.ts";
 
 type TableRow = {
   id: number;
@@ -23,13 +23,13 @@ type OUTPUT = {
   id?: number;
 };
 
-const shinkaiSqliteQueryExecutor = (params: {
+const zooSqliteQueryExecutor = (params: {
   query: string;
   params?: string[];
   database_name?: string;
 }): Promise<{ result: TableRow[] }> => {
   console.log("[SQL]", JSON.stringify(params));
-  return shinkaiSqliteQueryExecutor_(params);
+  return zooSqliteQueryExecutor_(params);
 };
 
 const createTable = async (
@@ -43,7 +43,7 @@ const createTable = async (
       memory TEXT
     );
   `;
-  await shinkaiSqliteQueryExecutor({
+  await zooSqliteQueryExecutor({
     query: createTableQuery,
     ...(database_name && { database_name }),
   });
@@ -56,7 +56,7 @@ const getAllMemories = async (
     SELECT id, memory
     FROM memory_list_table
   `;
-  const fetchAllMemories = await shinkaiSqliteQueryExecutor({
+  const fetchAllMemories = await zooSqliteQueryExecutor({
     query: fetchAllMemoriesQuery,
     params: [],
     ...(database_name && { database_name }),
@@ -73,7 +73,7 @@ const getMemory = async (
       FROM memory_list_table
       where id = ?
     `;
-  const fetchSpecificMemory = await shinkaiSqliteQueryExecutor({
+  const fetchSpecificMemory = await zooSqliteQueryExecutor({
     query: fetchSpecificMemoryQuery,
     params: [String(id)],
     ...(database_name && { database_name }),
@@ -152,7 +152,7 @@ export async function run(config: CONFIG, inputs: INPUTS): Promise<OUTPUT> {
       DELETE FROM memory_list_table
       WHERE id = ?
     `;
-    await shinkaiSqliteQueryExecutor({
+    await zooSqliteQueryExecutor({
       query,
       params: [String(memory_id)],
       ...(database_name && { database_name }),
@@ -168,7 +168,7 @@ export async function run(config: CONFIG, inputs: INPUTS): Promise<OUTPUT> {
         INSERT INTO memory_list_table (memory)
         VALUES (?)
       `;
-    await shinkaiSqliteQueryExecutor({
+    await zooSqliteQueryExecutor({
       query,
       params: [data || ''],
       ...(database_name && { database_name }),
@@ -179,7 +179,7 @@ export async function run(config: CONFIG, inputs: INPUTS): Promise<OUTPUT> {
         ORDER BY id DESC
         LIMIT 1
       `;
-    const latest_id = await shinkaiSqliteQueryExecutor({
+    const latest_id = await zooSqliteQueryExecutor({
       query: query_latest_id,
       ...(database_name && { database_name }),
     });
@@ -196,7 +196,7 @@ export async function run(config: CONFIG, inputs: INPUTS): Promise<OUTPUT> {
         SET memory = ?
         WHERE id = ?
       `;
-    await shinkaiSqliteQueryExecutor({
+    await zooSqliteQueryExecutor({
       query,
       params: [data || '', String(memory_id)],
       ...(database_name && { database_name }),

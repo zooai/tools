@@ -3,7 +3,7 @@
   "name": "macos-system",
   "version": "1.0.0",
   "description": "Control macOS system features via AppleScript",
-  "author": "Example",
+  "author": "did:zoo",
   "keywords": [
     "macos",
     "system",

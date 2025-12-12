@@ -2,7 +2,7 @@
   "name": "Memory Insights Management",
   "homepage": "https://github.com/dcSpark/zoo-tools/blob/main/tools/memory-insights /README.md",
   "description": "Handles memory insights. Can store and retrive insights. It has two types of insights: GENERAL and SPECIFIC. GENERAL is to store any context data or that is not related to a specific user or identifier. SPECIFIC is to store insights related to a specific user or element identifier.",
-  "author": "Zoo AI",
+  "author": "did:zoo",
   "version": "1.0.0",
   "keywords": [
     "memory",
@@ -96,8 +96,8 @@
     }
   ],
   "tools": [
-    "local:::__zoo__:::shinkai_sqlite_query_executor",
-    "local:::__zoo__:::shinkai_llm_prompt_processor"
+    "local:zoo:zoo_sqlite_query_executor",
+    "local:zoo:zoo_llm_prompt_processor"
   ],
   "oauth": null
 }

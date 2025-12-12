@@ -3,7 +3,7 @@
     "homepage": "https://github.com/dcSpark/zoo-tools/blob/main/tools/file-update/README.md",
     "version": "1.0.0",
     "description": "Applies a prompt to the file contents.",
-    "author": "Zoo AI",
+    "author": "did:zoo",
     "keywords": [
       "file",
       "update",
@@ -54,7 +54,7 @@
     "sqlTables": [],
     "sqlQueries": [],
     "tools": [
-      "local:::__zoo__:::shinkai_llm_prompt_processor"
+      "local:zoo:zoo_llm_prompt_processor"
     ],
     "oauth": null
   }

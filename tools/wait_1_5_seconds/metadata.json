@@ -5,7 +5,7 @@
     ""
   ],
   "version": "1.0.0",
-  "author": "@@official.sep-shinkai",
+  "author": "did:zoo",
   "oauth": [],
   "parameters": {
     "type": "object",

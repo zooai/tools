@@ -2,7 +2,7 @@
     "name": "Text to Audio",
     "homepage": "https://github.com/dcSpark/zoo-tools/blob/main/tools/text-to-audio/README.md",
     "description": "Converts text files (.txt or .md) to audio files using high-quality text-to-speech synthesis",
-    "author": "Zoo AI",
+    "author": "did:zoo",
     "version": "1.0.0",
     "keywords": [
         "text-to-speech",

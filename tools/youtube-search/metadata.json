@@ -2,7 +2,7 @@
   "name": "YouTube Search",
   "description": "Searches YouTube for videos via SerpAPI. Requires SERP_API_KEY in configuration.",
   "version": "1.0.0",
-  "author": "Devin",
+  "author": "did:zoo",
   "keywords": [
     "youtube",
     "serpapi",

@@ -2,7 +2,7 @@
   "name": "System Hardware Info",
   "description": "Get detailed system hardware information including CPU, RAM, and disk details",
   "version": "1.0.0",
-  "author": "Devin",
+  "author": "did:zoo",
   "keywords": [
     "system",
     "hardware",

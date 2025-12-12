@@ -11,7 +11,7 @@
     "biblio"
   ],
   "version": "1.0.0",
-  "author": "@@zoo",
+  "author": "did:zoo",
   "configurations": {
     "properties": {
       "max_results": {

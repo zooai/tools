@@ -1,13 +1,13 @@
 {
   "name": "Running Coach",
   "agent_id": "running_coach",
-  "full_identity_name": "@@official.sep-shinkai/main/agent/running_coach",
-  "llm_provider_id": "shinkai_free_trial",
+  "full_identity_name": "did:zoo:running_coach",
+  "llm_provider_id": "zoo_free_trial",
   "ui_description": "Expert on running training and supplementation, follows advice of experts such as Jack Daniels, Pete Pfitzinger, Matt Fitzgerald among others to prepare you for distances from 5K to the marathon.",
   "knowledge": [],
   "storage_path": "",
   "tools": [
-    "local:::__zoo__:::strava_api_caller"
+    "local:zoo:strava_api_caller"
   ],
   "debug_mode": false,
   "config": {

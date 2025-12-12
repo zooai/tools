@@ -3,7 +3,7 @@
   "name": "Chess Evaluate",
   "version": "1.0.0",
   "description": "Evaluate a chess position using Stockfish at a given depth",
-  "author": "Example",
+  "author": "did:zoo",
   "keywords": [
     "chess",
     "stockfish",

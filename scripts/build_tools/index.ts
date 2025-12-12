@@ -4,9 +4,9 @@ import { uploadTools } from "./upload.ts";
 export async function start() {
   console.log("Starting tool processing...");
   console.log("Environment check:");
-  console.log(`SHINKAI_STORE_ADDR: ${Deno.env.get("SHINKAI_STORE_ADDR")}`);
-  console.log(`SHINKAI_NODE_ADDR: ${Deno.env.get("SHINKAI_NODE_ADDR")}`);
-  console.log(`Store token present: ${!!Deno.env.get("SHINKAI_STORE_TOKEN")}`);
+  console.log(`ZOO_STORE_ADDR: ${Deno.env.get("ZOO_STORE_ADDR")}`);
+  console.log(`ZOO_NODE_ADDR: ${Deno.env.get("ZOO_NODE_ADDR")}`);
+  console.log(`Store token present: ${!!Deno.env.get("ZOO_STORE_TOKEN")}`);
   console.log(`Bearer token present: ${!!Deno.env.get("BEARER_TOKEN")}`);
 
   // Process tools
@@ -27,12 +27,12 @@ export async function start() {
   const agents_saved = await saveAgentsInNode(agents_raw);
   console.log(`Successfully processed ${agents_saved.length} agents`);
 
-  // Upload tools and agents to Shinkai Store
-  console.log("\nUploading tools to Shinkai Store...");
+  // Upload tools and agents to Zoo Store
+  console.log("\nUploading tools to Zoo Store...");
   await uploadTools(tools_saved);
   console.log("Tool uploading complete!");
 
-  console.log("\nUploading agents to Shinkai Store...");
+  console.log("\nUploading agents to Zoo Store...");
   await uploadTools(agents_saved);
   console.log("Agent uploading complete!");
 }

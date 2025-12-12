@@ -11,7 +11,7 @@
     "epub"
   ],
   "version": "1.0.0",
-  "author": "@@zoo",
+  "author": "did:zoo",
   "configurations": {
     "properties": {},
     "required": []
@@ -109,8 +109,8 @@
   "sqlQueries": [],
   "sqlTables": [],
   "tools": [
-    "local:::__zoo__:::download_pages",
-    "local:::__zoo__:::zoo_llm_prompt_processor"
+    "local:zoo:download_pages",
+    "local:zoo:zoo_llm_prompt_processor"
   ],
   "runner": "any",
   "operating_system": [

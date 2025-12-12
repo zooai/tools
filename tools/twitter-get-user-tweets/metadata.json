@@ -2,7 +2,7 @@
   "name": "X/Twitter Get User Tweets",
   "homepage": "https://github.com/dcSpark/zoo-tools/blob/main/tools/twitter-get-user-tweets/README.md",
   "description": "Function to fetch tweets from a specific Twitter user by username.",
-  "author": "Zoo AI",
+  "author": "did:zoo",
   "homePage": "",
   "configurations": {
     "type": "object",

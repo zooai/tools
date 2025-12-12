@@ -10,7 +10,7 @@
     "helius"
   ],
   "version": "1.0.0",
-  "author": "@@official.sep-shinkai",
+  "author": "did:zoo",
   "configurations": {
     "properties": {
       "HELIUS_API_KEY": {

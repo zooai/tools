@@ -1,4 +1,4 @@
-import { shinkaiSqliteQueryExecutor as shinkaiSqliteQueryExecutor_ } from "./shinkai-local-tools.ts";
+import { zooSqliteQueryExecutor as zooSqliteQueryExecutor_ } from "./zoo-local-tools.ts";
 
 type TableRow = {
   id: number;
@@ -22,13 +22,13 @@ type OUTPUT = {
   all_memories?: { key: string; memory: string }[];
 };
 
-const shinkaiSqliteQueryExecutor = (params: {
+const zooSqliteQueryExecutor = (params: {
   query: string;
   params?: string[];
   database_name?: string;
 }): Promise<{ result: TableRow[] }> => {
   console.log("[SQL]", JSON.stringify(params));
-  return shinkaiSqliteQueryExecutor_(params);
+  return zooSqliteQueryExecutor_(params);
 };
 
 const createTable = async (
@@ -43,7 +43,7 @@ const createTable = async (
       memory TEXT
     );
   `;
-  await shinkaiSqliteQueryExecutor({
+  await zooSqliteQueryExecutor({
     query: createTableQuery,
     ...(database_name && { database_name }),
   });
@@ -56,7 +56,7 @@ const getAllMemories = async (
     SELECT id, key, memory
       FROM memory_table
   `;
-  const fetchAllMemories = await shinkaiSqliteQueryExecutor({
+  const fetchAllMemories = await zooSqliteQueryExecutor({
     query: fetchAllMemoriesQuery,
     ...(database_name && { database_name }),
   });
@@ -72,7 +72,7 @@ const getMemory = async (
       FROM memory_table
       where key = ?
     `;
-  const fetchSpecificMemory = await shinkaiSqliteQueryExecutor({
+  const fetchSpecificMemory = await zooSqliteQueryExecutor({
     query: fetchSpecificMemoryQuery,
     params: [key],
     ...(database_name && { database_name }),
@@ -138,7 +138,7 @@ export async function run(config: CONFIG, inputs: INPUTS): Promise<OUTPUT> {
     VALUES (?, ?)
     ON CONFLICT(key) DO UPDATE SET memory = excluded.memory;
   `;
-  await shinkaiSqliteQueryExecutor({
+  await zooSqliteQueryExecutor({
     query,
     params: [memory_key.toLocaleLowerCase(), data || ''],
     ...(database_name && { database_name }),

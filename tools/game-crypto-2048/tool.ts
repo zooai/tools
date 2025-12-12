@@ -1,4 +1,4 @@
-import { shinkaiTypescriptUnsafeProcessor } from "./shinkai-local-tools.ts";
+import { zooTypescriptUnsafeProcessor } from "./zoo-local-tools.ts";
 
 const get_ts_code = () => {
   return `
@@ -151,7 +151,7 @@ const get_ts_package = () => {
 }
 
 export async function run(config: any, parameters: any) {
-    return await shinkaiTypescriptUnsafeProcessor({
+    return await zooTypescriptUnsafeProcessor({
         code: get_ts_code(),
         package: get_ts_package(),
         parameters,

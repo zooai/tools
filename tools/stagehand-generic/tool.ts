@@ -1,11 +1,11 @@
-import { shinkaiTypescriptUnsafeProcessor } from "./shinkai-local-tools.ts";
-import { getAssetPaths } from './shinkai-local-support.ts';
+import { zooTypescriptUnsafeProcessor } from "./zoo-local-tools.ts";
+import { getAssetPaths } from './zoo-local-support.ts';
 
 const getStagehandEngine = async () => {
     const assets = await getAssetPaths();
     return await Deno.readTextFile(assets.find(f => f.match(/engine.ts$/)));
 }
-const getShinkaiEthers = async () => {
+const getZooEthers = async () => {
     const assets = await getAssetPaths();
     return await Deno.readTextFile(assets.find(f => f.match(/ethers.js$/)));
 }
@@ -34,9 +34,9 @@ export async function run(config: { wallet_sk?: string }, parameters: any) {
         wallet_sk: config.wallet_sk,
     }
     if (config.wallet_sk) {
-        config_.src = await getShinkaiEthers();
+        config_.src = await getZooEthers();
     }
-    return await shinkaiTypescriptUnsafeProcessor({
+    return await zooTypescriptUnsafeProcessor({
         code: await getStagehandEngine(),
         package: getStagehandPackage(),
         parameters,

@@ -9,7 +9,7 @@
     "crypto"
   ],
   "version": "1.0.0",
-  "author": "@@localhost.sep-shinkai",
+  "author": "did:zoo",
   "configurations": {
     "properties": {
       "PRIVATE_KEY": {

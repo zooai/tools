@@ -2,7 +2,7 @@
   "name": "X/Twitter Search Latest",
   "homepage": "https://github.com/dcSpark/zoo-tools/blob/main/tools/twitter-search-latest/README.md",
   "description": "Function to search for the most recent tweets on Twitter based on a query string.",
-  "author": "Zoo AI",
+  "author": "did:zoo",
   "homePage": "",
   "configurations": {
     "type": "object",

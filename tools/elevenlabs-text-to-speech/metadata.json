@@ -1,5 +1,5 @@
 {
-    "author": "Zoo AI",
+    "author": "did:zoo",
     "runner": "any",
   "operating_system": ["linux", "macos", "windows"],
   "tool_set": "",

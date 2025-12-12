@@ -1,6 +1,6 @@
 {
   "name": "Audio to Text Transcription",
-  "author": "Zoo AI",
+  "author": "did:zoo",
   "description": "This tool transcribes audio files to text using the faster-whisper model.",
   "homePage": "",
   "configurations": {

@@ -3,7 +3,7 @@
   "name": "macos-finder",
   "version": "1.0.0",
   "description": "Manage files in Finder via AppleScript",
-  "author": "Example",
+  "author": "did:zoo",
   "keywords": [
     "macos",
     "finder",

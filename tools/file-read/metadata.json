@@ -3,7 +3,7 @@
     "homepage": "https://github.com/dcSpark/zoo-tools/blob/main/tools/file-read/README.md",
     "version": "1.0.0",
     "description": "Reads the text contents of a file from the given path.",
-    "author": "Zoo AI",
+    "author": "did:zoo",
     "keywords": [
       "file",
       "read",

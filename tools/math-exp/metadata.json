@@ -2,11 +2,11 @@
     "name": "Math Expression Evaluator",
     "homepage": "https://github.com/dcSpark/zoo-tools/blob/main/tools/math-exp/README.md",
     "description": "Parses and evaluates mathematical expressions. It’s a safer and more math-oriented alternative to using JavaScript’s eval function for mathematical expressions.",
-    "author": "Zoo AI",
+    "author": "did:zoo",
     "keywords": [
       "math",
       "expr-eval",
-      "shinkai"
+      "zoo"
     ],
     "version": "1.0.0",
     "runner": "any",

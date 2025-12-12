@@ -9,7 +9,7 @@
     "biblio"
   ],
   "version": "1.0.0",
-  "author": "@@zoo",
+  "author": "did:zoo",
   "configurations": {
     "properties": {
       "include_execution_log": {
@@ -124,12 +124,12 @@
   "sqlQueries": [],
   "sqlTables": [],
   "tools": [
-    "local:::__zoo__:::duckduckgo_search",
-    "local:::__zoo__:::download_pages",
-    "local:::__zoo__:::markdown_exporter",
-    "local:::__zoo__:::shinkai_llm_prompt_processor",
-    "local:::__zoo__:::wait_1_5_seconds",
-    "local:::__zoo__:::pdf_text_extractor"
+    "local:zoo:duckduckgo_search",
+    "local:zoo:download_pages",
+    "local:zoo:markdown_exporter",
+    "local:zoo:zoo_llm_prompt_processor",
+    "local:zoo:wait_1_5_seconds",
+    "local:zoo:pdf_text_extractor"
   ],
   "runner": "any",
   "operating_system": [

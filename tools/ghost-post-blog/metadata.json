@@ -6,7 +6,7 @@
     "tool_set": "ghost-cms",
     "version": "1.0.0",
     "runner": "any",
-    "author": "Zoo AI",
+    "author": "did:zoo",
     "keywords": [
         "ghost",
         "api",

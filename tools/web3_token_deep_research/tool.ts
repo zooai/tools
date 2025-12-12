@@ -1,5 +1,5 @@
-import { googleSearch, downloadPages, shinkaiLlmPromptProcessor, markdownExporter } from './shinkai-local-tools.ts';
-import { getHomePath } from './shinkai-local-support.ts';
+import { googleSearch, downloadPages, zooLlmPromptProcessor, markdownExporter } from './zoo-local-tools.ts';
+import { getHomePath } from './zoo-local-support.ts';
 
 // --- TYPE DEFINITIONS ---
 type CONFIG = {};
@@ -158,7 +158,7 @@ ${promptContent}
     console.log(`   -> Dispatching LLM task for section: ${task.section}`);
     
     // Start the LLM promise but do not await it. Add it to our array.
-    const promise = shinkaiLlmPromptProcessor({ format: "text", prompt: task.prompt });
+    const promise = zooLlmPromptProcessor({ format: "text", prompt: task.prompt });
     llmPromises.push(promise);
     
     // If it's not the last task, wait 1.5 seconds before starting the *next* one.

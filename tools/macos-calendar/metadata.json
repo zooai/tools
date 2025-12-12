@@ -3,7 +3,7 @@
   "name": "macos-calendar",
   "version": "1.0.0",
   "description": "Add or list calendar events using AppleScript",
-  "author": "Example",
+  "author": "did:zoo",
   "keywords": [
     "macos",
     "calendar",

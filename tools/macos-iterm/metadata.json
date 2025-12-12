@@ -3,7 +3,7 @@
   "name": "macos-iterm",
   "version": "1.0.0",
   "description": "Control iTerm via AppleScript",
-  "author": "Example",
+  "author": "did:zoo",
   "keywords": [
     "macos",
     "iterm",

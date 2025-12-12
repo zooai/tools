@@ -1,8 +1,8 @@
 {
-  "name": "Shinkai Question Learner",
+  "name": "Zoo Question Learner",
   "homePage": "",
   "description": "Learns from web pages by generating questions and answers, and interacts with users based on these questions. If the action was 'ask' it returns a question, always include the question number when referencing it",
-  "author": "Zoo AI",
+  "author": "did:zoo",
   "version": "1.0.0",
   "keywords": [],
   "runner": "any",
@@ -70,9 +70,9 @@
     }
   ],
   "tools": [
-      "local:::__zoo__:::shinkai_llm_prompt_processor",
-      "local:::__zoo__:::shinkai_sqlite_query_executor",
-      "local:::__zoo__:::download_pages"
+      "local:zoo:zoo_llm_prompt_processor",
+      "local:zoo:zoo_sqlite_query_executor",
+      "local:zoo:download_pages"
   ],
   "oauth": []
 }

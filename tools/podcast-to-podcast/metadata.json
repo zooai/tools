@@ -1,5 +1,5 @@
 {
-    "author": "@@localhost.arb-sep-shinkai",
+    "author": "did:zoo",
     "runner": "any",
   "operating_system": ["linux", "macos", "windows"],
   "tool_set": "",
@@ -15,7 +15,7 @@
       "transcript",
       "podcast",
       "converter",
-      "shinkai"
+      "zoo"
     ],
     "name": "Podcast to Podcast",
     "oauth": [],
@@ -47,8 +47,8 @@
     "sqlQueries": [],
     "sqlTables": [],
     "tools": [
-      "local:::__zoo__:::shinkai_llm_prompt_processor",
-      "local:::__zoo__:::eleven_labs_text_to_speech"
+      "local:zoo:zoo_llm_prompt_processor",
+      "local:zoo:eleven_labs_text_to_speech"
     ],
     "version": "1.0.0"
   }

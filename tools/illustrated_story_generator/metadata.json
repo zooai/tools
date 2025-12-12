@@ -10,7 +10,7 @@
     "image"
   ],
   "version": "1.0.0",
-  "author": "@@zoo",
+  "author": "did:zoo",
   "configurations": {
     "properties": {
       "num_scenes": {
@@ -76,9 +76,9 @@
   "sqlQueries": [],
   "sqlTables": [],
   "tools": [
-    "local:::__zoo__:::shinkai_llm_prompt_processor",
-    "local:::__zoo__:::wait_1_5_seconds",
-    "local:::__zoo__:::text_to_image_generator___getimg_ai_flux_1"
+    "local:zoo:zoo_llm_prompt_processor",
+    "local:zoo:wait_1_5_seconds",
+    "local:zoo:text_to_image_generator___getimg_ai_flux_1"
   ],
   "runner": "any",
   "operating_system": [

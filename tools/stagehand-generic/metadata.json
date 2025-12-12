@@ -1,5 +1,5 @@
 {
-  "author": "@@zoo",
+  "author": "did:zoo",
   "runner": "any",
   "operating_system": ["linux", "macos", "windows"],
   "tool_set": "",
@@ -77,7 +77,7 @@
   "sqlQueries": [],
   "sqlTables": [],
   "tools": [
-    "local:::__zoo__:::shinkai_typescript_unsafe_processor"
+    "local:zoo:zoo_typescript_unsafe_processor"
   ],
   "version": "1"
 }

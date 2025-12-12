@@ -1,24 +1,24 @@
-// These values and function are defined by the shinkai-node.
+// These values and function are defined by the zoo-node.
 
-export const author = "@@official.shinkai";
+export const author = "@@official.zoo";
 
 export const systemTools = [
-    "local:::__official_shinkai:::shinkai_llm_prompt_processor",
-    "local:::__official_shinkai:::shinkai_llm_map_reduce_processor",
-    "local:::__official_shinkai:::shinkai_sqlite_query_executor",
-    "local:::__official_shinkai:::shinkai_process_embeddings",
-    "local:::__official_shinkai:::shinkai_tool_config_updater",
-    "local:::__official_shinkai:::shinkai_typescript_unsafe_processor",
+    "local:zoo:zoo_llm_prompt_processor",
+    "local:zoo:zoo_llm_map_reduce_processor",
+    "local:zoo:zoo_sqlite_query_executor",
+    "local:zoo:zoo_process_embeddings",
+    "local:zoo:zoo_tool_config_updater",
+    "local:zoo:zoo_typescript_unsafe_processor",
   ];
 
 export function generateToolRouterKey(author: string, name: string): string {
-  return `local:::${author.toLowerCase().replace(/[^a-z0-9_]/g, '_')}:::${name.toLowerCase().replace(/[^a-z0-9_]/g, '_')}`;
+  return `local:${author.toLowerCase().replace(/[^a-z0-9_]/g, '_')}:${name.toLowerCase().replace(/[^a-z0-9_]/g, '_')}`;
 }
 
 export function stripVersion(toolKey: string): string {
-  const parts = toolKey.split(":::");
+  const parts = toolKey.split(":");
   if (parts.length === 3) return toolKey;
-  if (parts.length === 4) return parts[0] + ":::" + parts[1] + ":::" + parts[2];
+  if (parts.length === 4) return parts[0] + ":" + parts[1] + ":" + parts[2];
   throw Error('Invalid name');
 }
 
@@ -44,10 +44,10 @@ export async function uploadAsset(
   }
 
 
-  const response = await fetch(`${Deno.env.get("SHINKAI_STORE_ADDR")}/store/products/${routerKey}/assets`, {
+  const response = await fetch(`${Deno.env.get("ZOO_STORE_ADDR")}/store/products/${routerKey}/assets`, {
     method: 'POST',
     headers: {
-      'Authorization': `Bearer ${Deno.env.get("SHINKAI_STORE_TOKEN")}`,
+      'Authorization': `Bearer ${Deno.env.get("ZOO_STORE_TOKEN")}`,
     },
     body: formData,
   });

@@ -1,4 +1,4 @@
-const SHINKAI_NODE_ADDR = Deno.env.get("SHINKAI_NODE_ADDR") || "http://127.0.0.1:9550";
+const ZOO_NODE_ADDR = Deno.env.get("ZOO_NODE_ADDR") || "http://127.0.0.1:9550";
 const API_V2_KEY = Deno.env.get("API_V2_KEY") || "debug";
 const FOLDER_PATH = Deno.env.get("FOLDER_PATH") || "node_dump";
 
@@ -31,7 +31,7 @@ try {
 }
 
 // Fetch all tools
-const response = await fetch(`${SHINKAI_NODE_ADDR}/v2/list_playground_tools`, {
+const response = await fetch(`${ZOO_NODE_ADDR}/v2/list_playground_tools`, {
     headers: {
         "Authorization": `Bearer ${API_V2_KEY}`,
     },
@@ -43,13 +43,13 @@ const toolRouterKeys = tools.map((tool: any) => tool.tool_router_key);
 // Download and process each tool
 for (const toolRouterKey of toolRouterKeys) {
     console.log(`Processing tool: ${toolRouterKey}`);
-    const toolName = toolRouterKey.split(':::')[2] || toolRouterKey;
+    const toolName = toolRouterKey.split(':')[2] || toolRouterKey;
     const toolDir = `${FOLDER_PATH}/tools/${toolName}`;
 
     // Download tool zip
     console.log(`Downloading tool: ${toolName}`);
     const toolResponse = await fetch(
-        `${SHINKAI_NODE_ADDR}/v2/export_tool?tool_key_path=${encodeURIComponent(toolRouterKey)}`,
+        `${ZOO_NODE_ADDR}/v2/export_tool?tool_key_path=${encodeURIComponent(toolRouterKey)}`,
         {
             headers: {
                 "Authorization": `Bearer ${API_V2_KEY}`,

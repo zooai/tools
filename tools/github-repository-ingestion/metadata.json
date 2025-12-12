@@ -11,7 +11,7 @@
     "code"
   ],
   "version": "1.0.1",
-  "author": "@@zoo",
+  "author": "did:zoo",
   "configurations": {
     "properties": {
       "export_format": {

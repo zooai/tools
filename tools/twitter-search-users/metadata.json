@@ -2,7 +2,7 @@
   "name": "X/Twitter Search Users",
   "homepage": "https://github.com/dcSpark/zoo-tools/blob/main/tools/twitter-search-users/README.md",
   "description": "Function to search for Twitter users based on a query string.",
-  "author": "Zoo AI",
+  "author": "did:zoo",
   "homePage": "",
   "configurations": {
     "type": "object",

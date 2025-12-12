@@ -3,7 +3,7 @@
   "name": "Download Pages",
   "homepage": "https://github.com/dcSpark/zoo-tools/blob/main/tools/download-page/README.md",
   "description": "Downloads a URL and converts its HTML content to Markdown",
-  "author": "Zoo AI",
+  "author": "did:zoo",
   "keywords": [
     "HTML to Markdown",
     "web page downloader",

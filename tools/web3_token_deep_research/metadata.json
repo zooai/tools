@@ -9,7 +9,7 @@
     "web3"
   ],
   "version": "1.0.0",
-  "author": "@@zoo",
+  "author": "did:zoo",
   "configurations": {
     "properties": {},
     "required": []
@@ -52,11 +52,11 @@
   "sqlQueries": [],
   "sqlTables": [],
   "tools": [
-    "local:::__zoo__:::google_search",
-    "local:::__zoo__:::shinkai_llm_prompt_processor",
-    "local:::__zoo__:::markdown_exporter",
-    "local:::__zoo__:::wait_1_5_seconds",
-    "local:::__zoo__:::download_pages"
+    "local:zoo:google_search",
+    "local:zoo:zoo_llm_prompt_processor",
+    "local:zoo:markdown_exporter",
+    "local:zoo:wait_1_5_seconds",
+    "local:zoo:download_pages"
   ],
   "runner": "any",
   "operating_system": [

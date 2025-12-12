@@ -1,13 +1,13 @@
 {
   "name": "Salad Composer",
   "agent_id": "salad_composer",
-  "full_identity_name": "@@official.sep-shinkai/main/agent/salad_composer",
-  "llm_provider_id": "shinkai_free_trial",
+  "full_identity_name": "did:zoo:salad_composer",
+  "llm_provider_id": "zoo_free_trial",
   "ui_description": "Composes salads according to the user's query and to its salad cooking guide, and creates detailed visuals for them.\nUse text to describe your dream salad, or even add pictures of your available ingredients.\nDon't hesitate to change its image generation tool for your preferred one.",
   "knowledge": [],
   "storage_path": "",
   "tools": [
-    "local:::__zoo__:::text_to_image_generator___getimg_ai_flux_1"
+    "local:zoo:text_to_image_generator___getimg_ai_flux_1"
   ],
   "debug_mode": false,
   "config": {

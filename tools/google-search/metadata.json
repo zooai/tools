@@ -2,7 +2,7 @@
     "name": "Google Search",
     "homepage": "https://github.com/dcSpark/zoo-tools/blob/main/tools/google-search/README.md",
     "description": "This function takes a question as input and returns a comprehensive answer, along with the sources and statements used to generate the answer.",  
-    "author": "Zoo AI",
+    "author": "did:zoo",
     "version": "1.0.0",
     "keywords": [
       "search",

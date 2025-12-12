@@ -1,5 +1,5 @@
-import { shinkaiSqliteQueryExecutor as shinkaiSqliteQueryExecutor_ } from "./shinkai-local-tools.ts";
-import { shinkaiLlmPromptProcessor } from "./shinkai-local-tools.ts";
+import { zooSqliteQueryExecutor as zooSqliteQueryExecutor_ } from "./zoo-local-tools.ts";
+import { zooLlmPromptProcessor } from "./zoo-local-tools.ts";
 
 type TableRow = {
   id: number;
@@ -25,13 +25,13 @@ type OUTPUT = {
   specific_memory?: string;
 };
 
-const shinkaiSqliteQueryExecutor = (params: {
+const zooSqliteQueryExecutor = (params: {
   query: string;
   params?: string[];
   database_name?: string;
 }): Promise<{ result: TableRow[] }> => {
   console.log("[SQL]", JSON.stringify(params));
-  return shinkaiSqliteQueryExecutor_(params);
+  return zooSqliteQueryExecutor_(params);
 };
 
 
@@ -47,7 +47,7 @@ const createTable = async (
       memory TEXT
     );
     `;
-  await shinkaiSqliteQueryExecutor({
+  await zooSqliteQueryExecutor({
     query: createTableQuery,
     ...(database_name && { database_name }),
   });
@@ -61,7 +61,7 @@ const getGeneralMemory = async (
       FROM memory_insights_table
       where key is null
     `;
-  const fetchGeneralMemory = await shinkaiSqliteQueryExecutor({
+  const fetchGeneralMemory = await zooSqliteQueryExecutor({
     query: fetchGeneralMemoryQuery,
     ...(database_name && { database_name }),
   });
@@ -81,7 +81,7 @@ const getSpecificMemory = async (
       FROM memory_insights_table
       where key = ?
     `;
-  const fetchSpecificMemory = await shinkaiSqliteQueryExecutor({
+  const fetchSpecificMemory = await zooSqliteQueryExecutor({
     query: fetchSpecificMemoryQuery,
     params: [key],
     ...(database_name && { database_name }),
@@ -216,7 +216,7 @@ export async function run(config: CONFIG, inputs: INPUTS): Promise<OUTPUT> {
       general_prompt,
       data
     );
-    const generalResponse: { message: string } = await shinkaiLlmPromptProcessor({
+    const generalResponse: { message: string } = await zooLlmPromptProcessor({
       format: "text",
       prompt: generalPrompt,
     });
@@ -227,7 +227,7 @@ export async function run(config: CONFIG, inputs: INPUTS): Promise<OUTPUT> {
               UPDATE memory_insights_table SET memory = ?
               WHERE id = ?
           `;
-      await shinkaiSqliteQueryExecutor({
+      await zooSqliteQueryExecutor({
         query: generalUpdateQuery,
         params: [generalMemory, "" + previousGeneralMemory.id],
         ...(config.database_name && { database_name: config.database_name }),
@@ -237,7 +237,7 @@ export async function run(config: CONFIG, inputs: INPUTS): Promise<OUTPUT> {
             INSERT INTO memory_insights_table (memory)
             VALUES (?);
         `;
-      await shinkaiSqliteQueryExecutor({
+      await zooSqliteQueryExecutor({
         query: generalInsertQuery,
         params: [generalMemory],
         ...(config.database_name && { database_name: config.database_name }),
@@ -258,7 +258,7 @@ export async function run(config: CONFIG, inputs: INPUTS): Promise<OUTPUT> {
       specific_prompt,
       data
     );
-    const specificResponse = await shinkaiLlmPromptProcessor({
+    const specificResponse = await zooLlmPromptProcessor({
       format: "text",
       prompt: specificPrompt,
     });
@@ -269,7 +269,7 @@ export async function run(config: CONFIG, inputs: INPUTS): Promise<OUTPUT> {
             UPDATE memory_insights_table SET memory = ?
             WHERE id = ?
         `;
-      await shinkaiSqliteQueryExecutor({
+      await zooSqliteQueryExecutor({
         query: specificUpdateQuery,
         params: [specificMemory, "" + previousSpecificMemory.id],
         ...(config.database_name && { database_name: config.database_name }),
@@ -279,7 +279,7 @@ export async function run(config: CONFIG, inputs: INPUTS): Promise<OUTPUT> {
             INSERT INTO memory_insights_table (key, memory)
             VALUES (?, ?);
         `;
-      await shinkaiSqliteQueryExecutor({
+      await zooSqliteQueryExecutor({
         query: specificInsertQuery,
         params: [memory_key, specificMemory],
         ...(config.database_name && { database_name: config.database_name }),

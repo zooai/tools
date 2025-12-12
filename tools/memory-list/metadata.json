@@ -2,7 +2,7 @@
   "name": "List Memory Management",
   "homepage": "https://github.com/dcSpark/zoo-tools/blob/main/tools/memory/README.md",
   "description": "Handles list memory storage and retrieval using a database. It stores memories with associated IDs and can retrieve them by ID or get all memories.",
-  "author": "Zoo AI",
+  "author": "did:zoo",
   "version": "2.0.0",
   "keywords": [
     "memory",
@@ -121,7 +121,7 @@
     }
   ],
   "tools": [
-    "local:::__zoo__:::shinkai_sqlite_query_executor"
+    "local:zoo:zoo_sqlite_query_executor"
   ],
   "oauth": null
 }

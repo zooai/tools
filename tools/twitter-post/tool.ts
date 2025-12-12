@@ -1,4 +1,4 @@
-import { getAccessToken } from './shinkai-local-support.ts';
+import { getAccessToken } from './zoo-local-support.ts';
 
 type CONFIG = {};
 type INPUTS = {

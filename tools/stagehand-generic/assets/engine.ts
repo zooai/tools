@@ -5,19 +5,19 @@ import { z } from "zod";
 // This is to ensure that that "z" does not get treeshaken.
 z.object({});
 
-async function shinkaiLlmPromptProcessor(query: { prompt: string }) {
-    const response = await fetch(`${process.env.SHINKAI_NODE_LOCATION}/v2/tool_execution`, {
+async function zooLlmPromptProcessor(query: { prompt: string }) {
+    const response = await fetch(`${process.env.ZOO_NODE_LOCATION}/v2/tool_execution`, {
         method: "POST",
         headers: {
                 'Authorization': `Bearer ${process.env.BEARER}`,
-                'x-shinkai-tool-id': `${process.env.X_SHINKAI_TOOL_ID}`,
-                'x-shinkai-app-id': `${process.env.X_SHINKAI_APP_ID}`,
-                'x-shinkai-llm-provider': `${process.env.X_SHINKAI_LLM_PROVIDER}`,
+                'x-zoo-tool-id': `${process.env.X_ZOO_TOOL_ID}`,
+                'x-zoo-app-id': `${process.env.X_ZOO_APP_ID}`,
+                'x-zoo-llm-provider': `${process.env.X_ZOO_LLM_PROVIDER}`,
                 'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-            tool_router_key: "local:::__official_shinkai:::shinkai_llm_prompt_processor",
-            llm_provider: `${process.env.X_SHINKAI_LLM_PROVIDER}`, 
+            tool_router_key: "local:zoo:zoo_llm_prompt_processor",
+            llm_provider: `${process.env.X_ZOO_LLM_PROVIDER}`, 
             parameters: query
         })
     });
@@ -58,7 +58,7 @@ ${prompt}
 `;
     let reties = 3;
     while (true) {
-        const schema = await shinkaiLlmPromptProcessor({ prompt: llmPrompt });
+        const schema = await zooLlmPromptProcessor({ prompt: llmPrompt });
         const m = schema.message;
         // First try to extract data between ```json and ```
         const jsonData = m.match(/```json\s*([\s\S]*?)\s*```/);

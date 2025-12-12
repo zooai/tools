@@ -1,11 +1,11 @@
 {
   "name": "PDF Whitepaper Analyzer",
   "homepage": null,
-  "author": "Zoo AI",
+  "author": "did:zoo",
   "version": "1.0.0",
   "tools": [
-    "local:::__zoo__:::shinkai_llm_prompt_processor",
-    "local:::__zoo__:::smart_search_engine"
+    "local:zoo:zoo_llm_prompt_processor",
+    "local:zoo:smart_search_engine"
   ],
   "runner": "any",
   "operating_system": ["linux", "macos", "windows"],

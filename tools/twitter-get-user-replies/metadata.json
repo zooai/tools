@@ -2,7 +2,7 @@
   "name": "X/Twitter Get User Replies",
   "homepage": "https://github.com/dcSpark/zoo-tools/blob/main/tools/twitter-get-user-replies/README.md",
   "description": "Function to fetch reply tweets made by a specific Twitter user.",
-  "author": "Zoo AI",
+  "author": "did:zoo",
   "homePage": "",
   "configurations": {
     "type": "object",

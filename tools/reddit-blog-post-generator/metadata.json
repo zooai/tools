@@ -1,6 +1,6 @@
 {
     "name": "Reddit Blog Post Generator",
-    "author": "Zoo AI",
+    "author": "did:zoo",
     "homePage": "",
     "description": "Generates a blog post about Reddit posts based on user input.",
     "version": "1.0.0",
@@ -81,7 +81,7 @@
     ],
     "tool_set": "reddit",
     "tools": [
-        "local:::__zoo__:::reddit_scrape",
-        "local:::__zoo__:::shinkai_llm_prompt_processor"
+        "local:zoo:reddit_scrape",
+        "local:zoo:zoo_llm_prompt_processor"
     ]
 }

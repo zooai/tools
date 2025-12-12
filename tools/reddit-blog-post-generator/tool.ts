@@ -1,4 +1,4 @@
-import { shinkaiLlmPromptProcessor, redditScrape } from './shinkai-local-tools.ts'
+import { zooLlmPromptProcessor, redditScrape } from './zoo-local-tools.ts'
 
 type Configurations = {
   post_guidelines: string;
@@ -33,7 +33,7 @@ export const run = async (config: Configurations, inputs: Inputs) => {
       ${JSON.stringify(postContext.post)}
     `);
   }
-  const llmResponse = await shinkaiLlmPromptProcessor({
+  const llmResponse = await zooLlmPromptProcessor({
     prompt: `
     Write a blog post about the following posts:
     <posts>

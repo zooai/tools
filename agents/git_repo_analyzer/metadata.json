@@ -1,13 +1,13 @@
 {
   "name": "Git repo analyzer",
   "agent_id": "git_repo_analyzer",
-  "full_identity_name": "@@official.sep-shinkai/main/agent/git_repo_analyzer",
-  "llm_provider_id": "shinkai_free_trial",
+  "full_identity_name": "did:zoo:git_repo_analyzer",
+  "llm_provider_id": "zoo_free_trial",
   "ui_description": "Ingests a github repo and can analyze it. Useful for code discovery and reviews, docs generation, codebase analysis and improvements.",
   "knowledge": [],
   "storage_path": "",
   "tools": [
-    "local:::__zoo__:::github_repository_ingestion"
+    "local:zoo:github_repository_ingestion"
   ],
   "debug_mode": false,
   "config": {

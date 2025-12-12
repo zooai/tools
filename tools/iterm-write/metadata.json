@@ -2,12 +2,12 @@
   "name": "iterm-write",
   "version": "1.0.0",
   "description": "Writes a command (or text) to the active iTerm terminal.",
-  "author": "Zoo AI",
+  "author": "did:zoo",
   "keywords": [
     "iterm",
     "terminal",
     "automation",
-    "shinkai"
+    "zoo"
   ],
   "runner": "any",
   "operating_system": [

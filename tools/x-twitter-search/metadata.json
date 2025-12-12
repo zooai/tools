@@ -2,7 +2,7 @@
   "name": "X/Twitter Search",
   "homepage": "https://github.com/dcSpark/zoo-tools/blob/main/tools/x-twitter-search/README.md",
   "version": "1.0.0",
-  "author": "Zoo AI",
+  "author": "did:zoo",
   "runner": "any",
   "operating_system": ["linux", "macos", "windows"],
   "tool_set": "",

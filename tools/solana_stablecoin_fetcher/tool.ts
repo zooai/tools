@@ -16,7 +16,7 @@ interface OUTPUT {
 }
 
 export async function run(config: CONFIG, inputs: INPUTS): Promise<OUTPUT> {
-  const endpoint = 'https://api.shinkai.com/solana/query/stablecoin';
+  const endpoint = 'https://api.zoo.ai/solana/query/stablecoin';
   try {
     const response = await fetch(endpoint);
     

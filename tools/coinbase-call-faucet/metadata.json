@@ -3,11 +3,11 @@
     "name": "Coinbase Faucet Caller",
     "homepage": "https://github.com/dcSpark/zoo-tools/blob/main/tools/coinbase-call-faucet/README.md",
     "description": "Tool for calling a faucet on Coinbase",
-    "author": "Zoo AI",
+    "author": "did:zoo",
     "keywords": [
       "coinbase",
       "faucet",
-      "shinkai"
+      "zoo"
     ],
     "runner": "any",
   "operating_system": ["linux", "macos", "windows"],

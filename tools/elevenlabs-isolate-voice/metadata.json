@@ -1,6 +1,6 @@
 {
     "name": "ElevenLabs Isolate Voice",
-    "author": "Zoo AI",
+    "author": "did:zoo",
     "homePage": "",
     "description": "Isolates audio from YouTube videos or processes local audio files using ElevenLabs API.",
     "version": "1.0.0",
@@ -67,6 +67,6 @@
     "sqlQueries": [],
     "oauth": [],
     "tools": [
-        "local:::__zoo__:::youtube_download_mp3"
+        "local:zoo:youtube_download_mp3"
     ]
 }

@@ -3,7 +3,7 @@
   "name": "Chess Generate Image",
   "version": "1.0.0",
   "description": "Generate a PNG image of a chess position from FEN notation with optional last move highlighting",
-  "author": "Example",
+  "author": "did:zoo",
   "keywords": [
     "chess",
     "image",

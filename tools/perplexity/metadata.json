@@ -2,7 +2,7 @@
     "name": "Perplexity",
     "homepage": "https://github.com/dcSpark/zoo-tools/blob/main/tools/perplexity/README.md",
     "description": "Searches the internet using Perplexity",
-    "author": "Zoo AI",
+    "author": "did:zoo",
     "version": "1.0.0",
     "keywords": [
       "perplexity",

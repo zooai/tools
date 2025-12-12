@@ -9,7 +9,7 @@
     "flux"
   ],
   "version": "1",
-  "author": "@@zoo",
+  "author": "did:zoo",
   "configurations": {
     "properties": {
       "api_key": {

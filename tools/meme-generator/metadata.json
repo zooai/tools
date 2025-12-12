@@ -2,7 +2,7 @@
   "name": "Meme Generator",
   "homepage": "https://github.com/dcSpark/zoo-tools/blob/main/tools/meme-generator/README.md",
   "description": "Generates a meme image based on a joke by selecting a template and splitting the joke into appropriate parts.",
-  "author": "Zoo AI",
+  "author": "did:zoo",
   "version": "2.0.0",
   "keywords": [
     "meme",
@@ -65,7 +65,7 @@
   "sqlTables": [],
   "sqlQueries": [],
   "tools": [
-    "local:::__zoo__:::shinkai_llm_prompt_processor"
+    "local:zoo:zoo_llm_prompt_processor"
   ],
   "oauth": null
 }

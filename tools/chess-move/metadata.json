@@ -3,7 +3,7 @@
   "name": "Chess Move",
   "version": "1.0.0",
   "description": "Apply a move in UCI format to a given FEN and return the resulting position",
-  "author": "Example",
+  "author": "did:zoo",
   "keywords": [
     "chess",
     "move",

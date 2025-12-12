@@ -1,13 +1,13 @@
 {
     "name": "Finance Bro",
     "agent_id": "finance_bro",
-    "full_identity_name": "@@official.sep-shinkai/main/agent/finance_bro",
-    "llm_provider_id": "shinkai_free_trial",
+    "full_identity_name": "did:zoo:finance_bro",
+    "llm_provider_id": "zoo_free_trial",
     "ui_description": "Patagonia Jacket Guy giving financial advice",
     "knowledge": [],
     "storage_path": "",
     "tools": [
-        "local:::__zoo__:::google_search"
+        "local:zoo:google_search"
     ],
     "debug_mode": false,
     "config": {

@@ -13,7 +13,7 @@
     "file processing"
   ],
   "name": "PPTX File Processor",
-  "author": "Zoo AI",
+  "author": "did:zoo",
   "oauth": [],
   "operating_system": [
     "linux",
@@ -68,7 +68,7 @@
   "sqlTables": [],
   "tool_set": "",
   "tools": [
-    "local:::__zoo__:::shinkai_llm_prompt_processor"
+    "local:zoo:zoo_llm_prompt_processor"
   ],
   "version": "1.0.0"
 }

@@ -114,10 +114,10 @@ tools/
 
 ## Run Tests
 ```
-BEARER_TOKEN=debug SHINKAI_NODE_ADDR="http://0.0.0.0:9550" deno test scripts/ --allow-all
+BEARER_TOKEN=debug ZOO_NODE_ADDR="http://0.0.0.0:9550" deno test scripts/ --allow-all
 ```
 
 ## UPDATE REF FILES
 ```
-UPDATE_DUMP_FILES=true BEARER_TOKEN=debug SHINKAI_NODE_ADDR="http://0.0.0.0:9550" deno test scripts/ --allow-all
+UPDATE_DUMP_FILES=true BEARER_TOKEN=debug ZOO_NODE_ADDR="http://0.0.0.0:9550" deno test scripts/ --allow-all
 ```

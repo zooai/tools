@@ -2,12 +2,12 @@
     "name": "Perplexity API",
     "homepage": "https://github.com/dcSpark/zoo-tools/blob/main/tools/perplexity-api/README.md",
     "description": "Searches the web using Perplexity API (limited)",
-    "author": "Zoo AI",
+    "author": "did:zoo",
     "version": "1.0.0",
     "keywords": [
       "perplexity",
       "api",
-      "shinkai"
+      "zoo"
     ],
     "runner": "any",
   "operating_system": ["linux", "macos", "windows"],

@@ -2,7 +2,7 @@
   "name": "Key-Value Memory Management",
   "homepage": "https://github.com/dcSpark/zoo-tools/blob/main/tools/memory/README.md",
   "description": "Handles key-value memory storage and retrieval using a database. It stores memories with associated keys and can retrieve them by key.",
-  "author": "Zoo AI",
+  "author": "did:zoo",
   "version": "2.0.0",
   "keywords": [
     "memory",
@@ -102,7 +102,7 @@
     }
   ],
   "tools": [
-    "local:::__zoo__:::shinkai_sqlite_query_executor"
+    "local:zoo:zoo_sqlite_query_executor"
   ],
   "oauth": null
 }

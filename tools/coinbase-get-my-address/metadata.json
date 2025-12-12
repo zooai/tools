@@ -3,11 +3,11 @@
     "name": "Coinbase My Address Getter",
     "homepage": "https://github.com/dcSpark/zoo-tools/blob/main/tools/coinbase-get-my-address/README.md",
     "description": "Tool for getting the default address of a Coinbase wallet",
-    "author": "Zoo AI",
+    "author": "did:zoo",
     "keywords": [
       "coinbase",
       "address",
-      "shinkai"
+      "zoo"
     ],
     "runner": "any",
   "operating_system": ["linux", "macos", "windows"],

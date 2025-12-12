@@ -3,7 +3,7 @@
   "name": "macos-notifications",
   "version": "1.0.0",
   "description": "Manage macOS notifications and Do Not Disturb via AppleScript",
-  "author": "Example",
+  "author": "did:zoo",
   "keywords": [
     "macos",
     "notifications",

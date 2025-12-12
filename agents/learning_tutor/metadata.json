@@ -1,18 +1,18 @@
 {
     "name": "Learning Tutor",
     "agent_id": "learning_tutor",
-    "full_identity_name": "@@official.sep-shinkai/main/agent/learning_tutor",
-    "llm_provider_id": "shinkai_free_trial",
+    "full_identity_name": "did:zoo:learning_tutor",
+    "llm_provider_id": "zoo_free_trial",
     "ui_description": "Creates a learning plan with videos to watch, webpages to read, and articles to study.",
     "knowledge": [],
     "storage_path": "",
     "tools": [
-        "local:::__zoo__:::youtube_transcript_extractor_2_0",
-        "local:::__zoo__:::youtube_search",
-        "local:::__zoo__:::google_search",
-        "local:::__zoo__:::download_pages",
-        "local:::__zoo__:::markdown_exporter",
-        "local:::__zoo__:::arxiv_search"
+        "local:zoo:youtube_transcript_extractor_2_0",
+        "local:zoo:youtube_search",
+        "local:zoo:google_search",
+        "local:zoo:download_pages",
+        "local:zoo:markdown_exporter",
+        "local:zoo:arxiv_search"
     ],
     "debug_mode": false,
     "config": {

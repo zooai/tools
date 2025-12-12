@@ -3,7 +3,7 @@
     "homepage": "https://github.com/dcSpark/zoo-tools/blob/main/tools/file-write/README.md",
     "version": "1.0.0",
     "description": "Writes the text contents of a file to the given path.",
-    "author": "Zoo AI",
+    "author": "did:zoo",
     "keywords": [
       "file",
       "write",

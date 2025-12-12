@@ -1,13 +1,13 @@
 {
-  "name": "Shinkai tool logo and banner creator",
-  "agent_id": "shinkai_tool_logo_and_banner_creator",
-  "full_identity_name": "@@official.sep-shinkai/main/agent/shinkai_tool_logo_and_banner_creator",
-  "llm_provider_id": "shinkai_free_trial",
-  "ui_description": "Creates squared logos and rectangular banners for Shinkai tools to list on Shinkai AI store. Just provide your tool name and description, the number of logos and/or banners to generate, and optionaly add minimal instruction. Might need multiple runs to get a result you like.",
+  "name": "Zoo tool logo and banner creator",
+  "agent_id": "zoo_tool_logo_and_banner_creator",
+  "full_identity_name": "did:zoo:zoo_tool_logo_and_banner_creator",
+  "llm_provider_id": "zoo_free_trial",
+  "ui_description": "Creates squared logos and rectangular banners for Zoo tools to list on Zoo AI store. Just provide your tool name and description, the number of logos and/or banners to generate, and optionaly add minimal instruction. Might need multiple runs to get a result you like.",
   "knowledge": [],
   "storage_path": "",
   "tools": [
-    "local:::__zoo__:::text_to_image_generator___getimg_ai_flux_1"
+    "local:zoo:text_to_image_generator___getimg_ai_flux_1"
   ],
   "debug_mode": false,
   "config": {

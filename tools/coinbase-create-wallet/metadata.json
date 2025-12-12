@@ -3,12 +3,12 @@
     "name": "Coinbase Wallet Creator",
     "homepage": "https://github.com/dcSpark/zoo-tools/blob/main/tools/coinbase-create-wallet/README.md",
     "description": "Tool for creating a Coinbase wallet",
-    "author": "Zoo AI",
+    "author": "did:zoo",
     "keywords": [
       "coinbase",
       "wallet",
       "creator",
-      "shinkai"
+      "zoo"
     ],
     "runner": "any",
   "operating_system": ["linux", "macos", "windows"],
